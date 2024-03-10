@@ -1,3 +1,4 @@
+/*
 package com.example.demo.repository;
 
 import com.example.demo.models.Paciente;
@@ -11,3 +12,6 @@ public interface CitaJpaRepository extends JpaRepository<Paciente, Long> {
     //delete
 
 }
+
+ */
+

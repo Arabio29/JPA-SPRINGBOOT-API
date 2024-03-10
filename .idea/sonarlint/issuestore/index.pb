@@ -5,10 +5,6 @@ l
 <demo/src/main/java/com/example/demo/HospitalApplication.java,2\9\291397edca9b57c073f796cd99ca2e3bc1e9a934
 h
 8demo/src/main/java/com/example/demo/models/Paciente.java,6\3\63fbe5e8fcfdaaac26df7d9262223587b035973b
-j
-:demo/src/main/java/com/example/demo/models/Odontolodo.java,1\a\1a054cad09611ebc6703be83c9ae51ca48703e46
-c
-3demo/src/main/java/com/example/demo/controller.java,d\8\d8bf3b40086733a82a2c47f200b8e69508566024
 u
 Edemo/src/main/java/com/example/demo/repository/CitaJpaRepository.java,0\0\00227290bb127e2aa9e0a6655f0e97ffc1f1d5fe
 y
@@ -40,11 +36,7 @@ Q.idea/sonarlint/securityhotspotstore/0/0/00227290bb127e2aa9e0a6655f0e97ffc1f1d5
 w
 G.idea/sonarlint/issuestore/2/9/291397edca9b57c073f796cd99ca2e3bc1e9a934,d\9\d9c34a826f0aa8bd8d1204cdc354a4a840cf024b
 
-Q.idea/sonarlint/securityhotspotstore/1/a/1a054cad09611ebc6703be83c9ae51ca48703e46,0\2\02db952d5778602546fefcc3e4c9946b5e6fd48e
-
 Q.idea/sonarlint/securityhotspotstore/f/f/ff1930b8688318b89f16194ebf10f724297afe4a,5\c\5cbd127a30993783ba518179ad00e48b67df5acf
-
-Q.idea/sonarlint/securityhotspotstore/d/8/d8bf3b40086733a82a2c47f200b8e69508566024,7\a\7a3282a4009081d2b7cb82a3491026f76f619b28
 
 Q.idea/sonarlint/securityhotspotstore/2/9/291397edca9b57c073f796cd99ca2e3bc1e9a934,b\e\be77871f3f88fefd60fda799af64146a5dbb6d2e
 
@@ -53,3 +45,7 @@ Q.idea/sonarlint/securityhotspotstore/6/3/63fbe5e8fcfdaaac26df7d9262223587b03597
 Q.idea/sonarlint/securityhotspotstore/b/2/b2a179e32c87b1fb8bb5856e2056f49e9cc8591e,f\7\f7e04f8e0c56674650c56060e79032d682cfb0fc
 
 Q.idea/sonarlint/securityhotspotstore/b/0/b04870a147d52632dc2451b0cb3f4128e8902f76,7\0\7021210cb667ef2cc105c269bd80d870d41bf4b6
+s
+Cdemo/src/main/java/com/example/demo/controllers/CitaController.java,c\b\cbd876dded39109d814772d295b5ac62a55609ef
+m
+=demo/src/main/java/com/example/demo/services/CitaService.java,3\0\300e241b237dd00c4d16335e4a991800d27ea01a

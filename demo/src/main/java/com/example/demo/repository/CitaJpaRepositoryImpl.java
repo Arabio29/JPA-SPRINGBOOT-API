@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+/*package com.example.demo.repository;
 
 
 import org.springframework.stereotype.Repository;
@@ -12,3 +12,4 @@ public class CitaJpaRepositoryImpl {
         this.citaJpaRepository = citaJpaRepository;
     }
 }
+*/

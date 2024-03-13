@@ -2,6 +2,9 @@ package com.example.demo.models;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "cita")
 public class Cita {
@@ -15,19 +18,17 @@ public class Cita {
 
 
     public Cita(Paciente paciente, Odontologo odontologo){
-        this.paciente = paciente;
         this.odontologo = odontologo;
     }
+
     public Cita(){
 
     }
 
-    @OneToOne (mappedBy = "cita", cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
-    private Paciente paciente;
+    @ManyToMany(mappedBy = "citass")
+    private List<Paciente> pacientes = new ArrayList<>();
 
-    @OneToOne (mappedBy = "cita", cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
+    @ManyToOne
     private Odontologo odontologo;
 
     public Long getId() {

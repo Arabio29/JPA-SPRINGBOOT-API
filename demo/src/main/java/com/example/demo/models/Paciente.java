@@ -2,6 +2,9 @@ package com.example.demo.models;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "paciente")
 public class Paciente {
@@ -13,19 +16,21 @@ public class Paciente {
     private String apellido;
     private String domicilio;
 
-
     public Paciente(Long dni, String nombre, String apellido, String domicilio, Cita cita) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
         this.domicilio = domicilio;
-        this.cita = cita;
     }
 
-    @OneToOne
-    @JoinColumn(name = "paciente_dni")
-    @PrimaryKeyJoinColumn
-    private Cita cita;
+    @ManyToMany
+    @JoinTable(
+            name = "paciente_cita",
+            joinColumns = @JoinColumn(name = "paciente_dni"),
+            inverseJoinColumns = @JoinColumn(name = "cita_id")
+    )
+    private List<Cita> citass = new ArrayList<>();
+
 
     public Long getDni() {
         return dni;
@@ -43,9 +48,6 @@ public class Paciente {
         return domicilio;
     }
 
-    public Cita getCita() {
-        return cita;
-    }
 
     public void setDni(Long dni) {
         this.dni = dni;
@@ -63,7 +65,4 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
-    public void setCita(Cita cita) {
-        this.cita = cita;
-    }
 }

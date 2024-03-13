@@ -1,6 +1,7 @@
 package com.example.demo.models;
-
 import jakarta.persistence.*;
+
+import java.util.List;
 
 
 @Entity
@@ -13,18 +14,15 @@ public class Odontologo {
     private String nombre;
     private String apellido;
 
-
-    public Odontologo(Long matricula, String nombre, String apellido, Cita cita) {
+    public Odontologo(Long matricula, String nombre, String apellido, Cita citas) {
         this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.cita = cita;
     }
 
-    @OneToOne
-    @PrimaryKeyJoinColumn
-    @JoinColumn(name = "odontologo_matricula")
-    private Cita cita;
+    @OneToMany(mappedBy = "odontologo",cascade = CascadeType.ALL)
+    private List<Cita> citas;
+
 
     public void setMatricula(Long matricula) {
         this.matricula = matricula;
@@ -38,9 +36,6 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
-    public void setCita(Cita cita) {
-        this.cita = cita;
-    }
 
     public Long getMatricula() {
         return matricula;
@@ -54,7 +49,5 @@ public class Odontologo {
         return apellido;
     }
 
-    public Cita getCita() {
-        return cita;
-    }
+
 }
